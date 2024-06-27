@@ -19,7 +19,6 @@ x_train, x_test = x_train / 255.0, x_test / 255.0  # Normalize pixel values to b
 def visualize(index):
     plt.imshow(x_train[index])
     plt.show()
-1
 
 model = Sequential([
     Conv2D(32,(3,3),activation = "relu",input_shape = (28,28,1)),
